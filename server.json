@@ -1,0 +1,36 @@
+
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.bitcoindatalabs/bitcoindatalabs-mcp",
+  "title": "Bitcoin Data Labs MCP",
+  "description": "Zero-clone Bitcoin, Lightning, and OSS ecosystem telemetry: 1,009-repo security posture, Bitcoin Core dev health, BIPs, funding, Lightning security research, mining HHI, and forensic aggregates.",
+  "repository": {
+    "url": "https://github.com/bitcoindatalabs/bitcoindatalabs-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "bitcoindatalabs-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "BDL_GITHUB_ROOT",
+          "description": "Optional path to local bitcoindatalabs git checkouts to bypass HTTPS fetching.",
+          "isRequired": false,
+          "isSecret": false
+        },
+        {
+          "name": "BDL_MCP_CACHE_DIR",
+          "description": "Optional cache directory for downloaded JSON/Parquet slices (defaults to ~/.cache/bitcoindatalabs-mcp).",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bitcoindatalabs-mcp"
+version = "0.1.0"
+description = "Zero-clone Model Context Protocol (MCP) server for Bitcoin Data Labs open telemetry: Bitcoin Core governance, BIPs, OSS ecosystem security posture (1,009 repos), Lightning security research, mining concentration, and on-chain forensic aggregates."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+authors = [
+  { name = "Saurabh Kumar" },
+]
+keywords = [
+  "mcp",
+  "model-context-protocol",
+  "bitcoin",
+  "lightning-network",
+  "bitcoin-data-labs",
+  "open-source-software",
+  "supply-chain-security",
+  "security-research",
+  "duckdb",
+  "parquet",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+  "mcp>=2.0.0",
+  "duckdb>=1.1.0",
+  "httpx>=0.27.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+bitcoindatalabs-mcp = "bitcoindatalabs_mcp.server:main"
+bdl-mcp = "bitcoindatalabs_mcp.server:main"
+
+[project.urls]
+Homepage = "https://bitcoindatalabs.org"
+Repository = "https://github.com/bitcoindatalabs/bitcoindatalabs-mcp"
+"Research" = "https://bitcoindatalabs.org/research.html"
+"Data Catalog" = "https://bitcoindatalabs.org/work.html"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

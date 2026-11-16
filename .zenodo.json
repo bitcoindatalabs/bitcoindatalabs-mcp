@@ -1,0 +1,40 @@
+
+{
+  "title": "bitcoindatalabs-mcp: Zero-Clone Model Context Protocol Server for Bitcoin Data Labs Open Datasets",
+  "description": "Open-source Model Context Protocol (MCP) server exposing reproducible empirical datasets from Bitcoin Data Labs (501(c)(3)), covering 1,009-repo open-source software security posture, Bitcoin Core engineering governance, BIP status, developer funding, Lightning Network security research (arXiv:2610.20952, arXiv:2610.30350, arXiv:2611.16311), mining pool concentration, and Coldcard RNG forensic aggregates.",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Kumar, Saurabh",
+      "affiliation": "Bitcoin Data Labs",
+      "orcid": "0009-0004-7944-3492"
+    }
+  ],
+  "keywords": [
+    "Bitcoin",
+    "Lightning Network",
+    "Model Context Protocol",
+    "MCP",
+    "Open-Source Software Supply Chain",
+    "Financial Infrastructure Resilience",
+    "Bitcoin Data Labs"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.48550/arXiv.2610.20952",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.48550/arXiv.2610.30350",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.48550/arXiv.2611.16311",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ]
+}

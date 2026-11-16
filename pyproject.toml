@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bitcoindatalabs-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "Zero-clone Model Context Protocol (MCP) server for Bitcoin Data Labs open telemetry: Bitcoin Core governance, BIPs, OSS ecosystem security posture (1,009 repos), Lightning security research, mining concentration, and on-chain forensic aggregates."
 readme = "README.md"
 license = "MIT"

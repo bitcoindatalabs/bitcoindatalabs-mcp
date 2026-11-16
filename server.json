@@ -1,19 +1,18 @@
-
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.bitcoindatalabs/bitcoindatalabs-mcp",
   "title": "Bitcoin Data Labs MCP",
-  "description": "Zero-clone Bitcoin, Lightning, and OSS ecosystem telemetry: 1,009-repo security posture, Bitcoin Core dev health, BIPs, funding, Lightning security research, mining HHI, and forensic aggregates.",
+  "description": "Zero-clone Bitcoin, Lightning & 1,009-repo OSS telemetry: Core health, BIPs & mining HHI.",
   "repository": {
     "url": "https://github.com/bitcoindatalabs/bitcoindatalabs-mcp",
     "source": "github"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "bitcoindatalabs-mcp",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "transport": {
         "type": "stdio"
       },

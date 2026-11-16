@@ -105,3 +105,13 @@ def test_offline_mcp_stdio_handshake(tmp_path: Path) -> None:
     assert tool_count == 13
     assert ds_payload["dataset_count"] == 11
     assert attr_payload["repository"] == "https://github.com/bitcoindatalabs/bitcoindatalabs-mcp"
+def test_server_manifest_and_version_sync() -> None:
+    import tomllib
+
+    repo_root = Path(__file__).resolve().parent.parent
+    srv = json.loads((repo_root / "server.json").read_text(encoding="utf-8"))
+    with (repo_root / "pyproject.toml").open("rb") as f:
+        py_ver = tomllib.load(f)["project"]["version"]
+    assert 1 <= len(srv["description"]) <= 100
+    assert 1 <= len(srv["title"]) <= 100
+    assert srv["version"] == py_ver == srv["packages"][0]["version"]

@@ -11,8 +11,8 @@ authors:
 repository-code: "https://github.com/bitcoindatalabs/bitcoindatalabs-mcp"
 url: "https://bitcoindatalabs.org"
 license: MIT
-version: 0.1.0
-date-released: 2026-11-15
+version: 0.1.1
+date-released: 2026-11-16
 keywords:
   - Bitcoin
   - Lightning Network
